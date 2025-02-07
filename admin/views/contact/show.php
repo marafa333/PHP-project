@@ -19,9 +19,10 @@
   </thead>
   <tbody>
     <?php
+    $id =1;
     foreach ($contacts as $contact) { ?>
     <tr>
-      <th scope='row'><?= $contact['id'] ?></th> 
+      <th scope='row'><?= $id++ ?></th> 
       <td><?= $contact['contact_name'] ?></td>
       <td><?= $contact['contact_email'] ?></td>
       <td><?= $contact['contact_number'] ?></td>

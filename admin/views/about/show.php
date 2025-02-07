@@ -18,9 +18,10 @@
   </thead>
   <tbody>
     <?php
+    $id = 1;
     foreach ($abouts as $about) { ?>
     <tr>
-      <th scope='row'><?= $about['id'] ?></th> 
+      <th scope='row'><?= $id++ ?></th> 
       <td><?= $about['about_title'] ?></td>
       <td><?= $about['about_description'] ?></td>
       <td>

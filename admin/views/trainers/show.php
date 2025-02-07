@@ -18,9 +18,10 @@
   </thead>
   <tbody>
     <?php
+    $id = 1;
     foreach ($trainers as $trainer) { ?>
     <tr>
-      <th scope='row'><?= $trainer['id'] ?></th> 
+      <th scope='row'><?= $id++ ?></th> 
       <td><?= $trainer['trainer_name'] ?></td>
       <td><a href="https://www.facebook.com/<?= $trainer['trainer_facebook'] ?>" class="btn btn-primary" target="_blank">Facebook</a></td>
       <td>
